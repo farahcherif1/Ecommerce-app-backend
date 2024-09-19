@@ -1,0 +1,17 @@
+{
+    "port": "3100",
+    "mongoDbUrl" : "mongodb+srv://farahcherif:AiMmSXh-Y_4HrrD@cluster0.jthvk.mongodb.net/digizone_yt?retryWrites=true&w=majority&appName=Cluster0",
+    "secretToken" : "admin@123",
+    "jwtSecret": "secretTest@123456",
+    "loginLink": "http://localhost:3000/auth",
+    "emailService": {
+        "testDomain": "sandbox09e8192a1aca4c5f890fff4ca75a0dfb.mailgun.org",
+        "privateApiKey": "7a3af442-2f566c1c",
+        "publicApiKey": "pubkey-a27c11b3ed7b4d79963253e023cef04c",   
+        "emailTemplates": {
+            "forgotPassword": "forgot-password-template",
+            "verifyEmail": "verify-email-template",
+            "orderSuccess": "order-success"
+        }
+    }
+}
