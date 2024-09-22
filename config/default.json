@@ -4,14 +4,33 @@
     "secretToken" : "admin@123",
     "jwtSecret": "secretTest@123456",
     "loginLink": "http://localhost:3000/auth",
+    "appPrefix": "/api/v1", 
+    "fileStoragePath": "../uploads/",
     "emailService": {
         "testDomain": "sandbox09e8192a1aca4c5f890fff4ca75a0dfb.mailgun.org",
         "privateApiKey": "7a3af442-2f566c1c",
-        "publicApiKey": "pubkey-a27c11b3ed7b4d79963253e023cef04c",   
+        "publicApiKey": "pubkey-a27c11b3ed7b4d79963253e023cef04c",  
         "emailTemplates": {
             "forgotPassword": "forgot-password-template",
             "verifyEmail": "verify-email-template",
             "orderSuccess": "order-success"
         }
-    }
+    },
+     
+    "cloudinary": { 
+        "cloud_name": "duuhu0pvf", 
+        "api_key": "729873379911385", 
+        "api_secret": "t_AKYB0EJQJI_nPvRvtYHoKamos",
+        "folderPath": "digizone/products",
+        "publicId_prefix": "digi_prods_",
+        "bigSize": "400x400"
+    },
+    "stripe": {
+        "publishable_key": "pk_test_51Q0pXX02dsoxa4y33jk9webFSc9cts4AeQLkOPN0C9EQAilCi0P7N9aLbz2bSNMkKI19KoALw89kCWXZCaVT089C00jZPqgHsN",
+        "secret_key": "sk_test_51Q0pXX02dsoxa4y3TM1AdYWOYaQ7uYm8PnwFDsrIkW8cGykcaBCTWGK8ExXMzHHJzxWIHr4BhggMC7VL3pAbmFWV00GVDC0MCD",
+        "successUrl": "http://localhost:3000/order-success",
+        "cancelUrl": "http://localhost:3000/order-cancel",
+        "webhookSecret": "whsec_fDTq7Bwn6C3U0fr3Ze2wNf4XmbqRlIUy"
+
+      }
 }

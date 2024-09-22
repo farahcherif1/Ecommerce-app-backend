@@ -5,6 +5,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 // import config from 'config';
 import { AllExceptionFilter } from './httpExceptionFilter';
 import { UsersModule } from './users/users.module';
+import { ProductsModule } from './products/products.module';
+import { OrdersModule } from './orders/orders.module';
 const config = require("config");
 
 @Module({
@@ -14,6 +16,8 @@ const config = require("config");
       w :1,
   }),
     UsersModule,
+    ProductsModule,
+    OrdersModule,
   ],
   controllers: [AppController],
   providers: [
