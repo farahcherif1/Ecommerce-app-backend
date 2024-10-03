@@ -5,7 +5,8 @@ export class AppService {
   getHello(): string {
     return 'Hello World!';
   }
-  getTest ():string {
-    return 'Test';
+
+  getTest(): string {
+    return 'Test ::  The Heart Coder (DigiZone)';
   }
 }
